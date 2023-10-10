@@ -1,0 +1,14 @@
+* rovemer quaisquer occorencia de nvidia
+  1. sudo apt autoremove --purge nvidia*
+  2. sudo /usr/bin//nvidia-uninstall
+  3. sudo /usr/local/cuda-X.Y/bin/cuda-uninstall
+*  pre-instalaçao
+  1. sudo apt update && sudo apt upgrade
+  2. lspci | grep -e VGA
+*  instalaçao
+  1. observa os piltos/drivers disponiveils : ubuntu-drivers devices
+  2. instalar o recomendado : sudo apt ubuntu-drivers autoinstall
+  3. installar um outro : sudo apt install [uns dos pilotos ilustrado por ubuntu-drivers devices]
+     - ex : sudo apt install nvidia-driver-535 
+*  reiniciar
+ 1. reboot 
