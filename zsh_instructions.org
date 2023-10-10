@@ -1,0 +1,30 @@
+* instalar zsh
+ 1. sudo apt install zsh
+*  mudar o shell de bash por zsh
+ 1. visualiza o corrente shell : echo $0
+ 2. chsh
+ 3. selection /bin/zsh
+ 4. reboot
+*  installar ohmyzsh
+ - [[https://ohmyz.sh/#install][OHMYZSH]]
+ - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  
+*  themes :
+ - [[https://github.com/romkatv/powerlevel10k][powerlvel10k]]
+ - git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+* fonts :
+ - copy from : https://github.com/ibnyusrat/my-linux-setup
+ - put the fonts in the folder .fonts in the ~ dir,
+ - .font does not exit must be created
+* gnome tools
+ - sudo apt install gnome-tweaks
+ - open tweaks from launcher, change the fonts to MesloLGS NF Regular and close the terminal
+*  bash shell vive /bin/bash
+*  the .bashrc will become .zshrc
+*  modifie the .zshrc file
+ - ZSH_THEME="robbyrussell" to ZSH_THEME="powerlevel10k/powerlevel10k"
+ - source the .zshrc or just initialize another terminal
+ -  read and go
+* autosuggetion
+ - git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+ - modifie .zshrc from plugins = (git) to plugins=(zsh-autosuggestions)
+ - source .zshrc
